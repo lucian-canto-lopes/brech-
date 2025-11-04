@@ -1,0 +1,63 @@
+:root{--brand:#0f766e;--brand-2:#115e59;--bg:#0b0f12;--panel:#12171c;--text:#e6e6e6;--muted:#9aa4af;--border:#243342}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+a{color:var(--text);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+.topbar{position:sticky;top:0;z-index:800;background:rgba(11,15,18,.8);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{margin:0;font-size:22px;letter-spacing:.5px}
+.nav a{margin:0 10px;color:var(--muted)}
+.nav a:hover{color:var(--text)}
+.cart-button{background:transparent;border:1px solid var(--border);color:var(--text);padding:8px 10px;border-radius:10px;cursor:pointer}
+.badge{background:var(--brand);border-radius:999px;padding:2px 8px;margin-left:6px}
+.hero{display:grid;place-items:center;min-height:300px;background:linear-gradient(120deg,rgba(17,94,89,.35),transparent)}
+.hero-text{text-align:center;padding:40px 0}
+.hero h2{margin:0 0 10px}
+.btn{display:inline-block;background:var(--brand);color:#fff;padding:10px 16px;border-radius:10px;border:0;cursor:pointer}
+.btn:hover{background:var(--brand-2)}
+.btn-primary{background:#2563eb}
+.btn-primary:hover{background:#1e40af}
+
+.catalog{padding:32px 0}
+.catalog-controls{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.catalog input, .catalog select{background:var(--panel);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px}
+.grid{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:16px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:960px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;height:280px;object-fit:cover;background:#0e1318}
+.card .card-body{padding:12px}
+.card .title{margin:0 0 6px;font-size:16px}
+.card .muted{color:var(--muted);font-size:14px}
+.card .row{display:flex;align-items:center;justify-content:space-between;margin-top:8px}
+.price{font-weight:700}
+.empty{padding:24px;text-align:center;color:var(--muted)}
+/* detalhes inline do produto */
+.details{border-top:1px solid var(--border);margin-top:10px;padding-top:10px;color:var(--muted)}
+.details .kvs{display:flex;gap:12px;flex-wrap:wrap;font-size:12px}
+.card .actions{display:flex;gap:8px;justify-content:space-between;margin-top:10px}
+
+.about, .contact{padding:32px 0;border-top:1px solid var(--border)}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:grid;place-items:center;z-index:1000}
+.modal-content{width:min(960px,92vw);background:var(--panel);border:1px solid var(--border);border-radius:16px;box-shadow:0 20px 80px rgba(0,0,0,.5)}
+.modal-body{display:grid;gap:16px;padding:16px}
+@media(min-width:860px){.modal-body{grid-template-columns:1fr 1fr;padding:24px}}
+.modal-close{background:transparent;border:0;color:var(--muted);cursor:pointer;font-size:16px}
+.modal-content .modal-close{position:absolute;margin:10px}
+.modal-content{position:relative}
+.modal-info .row{display:flex;gap:8px;margin:8px 0}
+.price-row{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.modal img{width:100%;height:420px;object-fit:cover;border-radius:10px;background:#0e1318}
+
+.cart{position:fixed;top:0;right:0;width:min(420px,92vw);height:100dvh;background:var(--panel);border-left:1px solid var(--border);display:flex;flex-direction:column;z-index:900}
+.cart-header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--border)}
+.cart-items{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:10px}
+.cart-item{display:grid;grid-template-columns:80px 1fr auto;gap:10px;background:#0f141a;border:1px solid var(--border);border-radius:12px;padding:8px}
+.cart-item img{width:80px;height:80px;object-fit:cover;border-radius:8px}
+.cart-item .title{margin:0}
+.cart-item .muted{font-size:12px}
+.cart-footer{padding:12px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:8px}
+.qty{display:flex;align-items:center;gap:6px}
+.qty button{background:transparent;border:1px solid var(--border);color:var(--text);border-radius:8px;width:26px;height:26px;cursor:pointer}

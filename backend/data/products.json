@@ -1,0 +1,134 @@
+[
+  {
+    "id": "1",
+    "name": "Jaqueta Jeans Vintage",
+    "price": 119.9,
+    "currency": "BRL",
+    "category": "Roupas",
+    "sizes": ["P", "M"],
+    "condition": "Excelente",
+    "description": "Jaqueta jeans clássica, lavagem média, perfeita para meia-estação.",
+    "image": "https://via.placeholder.com/600x800?text=Jaqueta+Jeans"
+  },
+  {
+    "id": "2",
+    "name": "Vestido Floral Midi",
+    "price": 89.5,
+    "currency": "BRL",
+    "category": "Roupas",
+    "sizes": ["M"],
+    "condition": "Ótimo",
+    "description": "Vestido midi com estampa floral e tecido leve.",
+    "image": "https://via.placeholder.com/600x800?text=Vestido+Floral"
+  },
+  {
+    "id": "3",
+    "name": "Camisa Social Branca",
+    "price": 59.0,
+    "currency": "BRL",
+    "category": "Roupas",
+    "sizes": ["G"],
+    "condition": "Muito bom",
+    "description": "Camisa de algodão, corte clássico, quase sem uso.",
+    "image": "https://via.placeholder.com/600x800?text=Camisa+Branca"
+  },
+  {
+    "id": "4",
+    "name": "Saia Xadrez",
+    "price": 49.9,
+    "currency": "BRL",
+    "category": "Roupas",
+    "sizes": ["P"],
+    "condition": "Ótimo",
+    "description": "Saia xadrez estilo colegial, cintura alta.",
+    "image": "https://via.placeholder.com/600x800?text=Saia+Xadrez"
+  },
+  {
+    "id": "5",
+    "name": "Blusa Tricot Gola Alta",
+    "price": 69.9,
+    "currency": "BRL",
+    "category": "Roupas",
+    "sizes": ["M", "G"],
+    "condition": "Excelente",
+    "description": "Blusa de tricot macia, ideal para dias frios.",
+    "image": "https://via.placeholder.com/600x800?text=Blusa+Tricot"
+  },
+  {
+    "id": "6",
+    "name": "Calça Mom Jeans",
+    "price": 79.9,
+    "currency": "BRL",
+    "category": "Roupas",
+    "sizes": ["P", "M"],
+    "condition": "Bom",
+    "description": "Mom jeans vintage com caimento confortável.",
+    "image": "https://via.placeholder.com/600x800?text=Mom+Jeans"
+  },
+  {
+    "id": "7",
+    "name": "Tênis Branco Casual",
+    "price": 99.9,
+    "currency": "BRL",
+    "category": "Calçados",
+    "sizes": ["37", "38", "39"],
+    "condition": "Muito bom",
+    "description": "Tênis branco versátil, combina com tudo.",
+    "image": "https://via.placeholder.com/600x800?text=Tenis+Branco"
+  },
+  {
+    "id": "8",
+    "name": "Bolsa Tiracolo Caramelo",
+    "price": 89.9,
+    "currency": "BRL",
+    "category": "Acessórios",
+    "sizes": ["U"],
+    "condition": "Excelente",
+    "description": "Bolsa tiracolo em material sintético, cor caramelo.",
+    "image": "https://via.placeholder.com/600x800?text=Bolsa+Caramelo"
+  },
+  {
+    "id": "9",
+    "name": "Cinto de Couro Preto",
+    "price": 39.9,
+    "currency": "BRL",
+    "category": "Acessórios",
+    "sizes": ["U"],
+    "condition": "Ótimo",
+    "description": "Cinto de couro legítimo, fivela metálica.",
+    "image": "https://via.placeholder.com/600x800?text=Cinto+Preto"
+  },
+  {
+    "id": "10",
+    "name": "Cardigã Oversized",
+    "price": 84.9,
+    "currency": "BRL",
+    "category": "Roupas",
+    "sizes": ["M", "G"],
+    "condition": "Excelente",
+    "description": "Cardigã quentinho, modelagem ampla, confortável.",
+    "image": "https://via.placeholder.com/600x800?text=Cardiga+Oversized"
+  },
+  {
+    "id": "11",
+    "name": "Brinco Argola Dourado",
+    "price": 24.9,
+    "currency": "BRL",
+    "category": "Acessórios",
+    "sizes": ["U"],
+    "condition": "Novo",
+    "description": "Par de argolas douradas, acabamento brilhante.",
+    "image": "https://via.placeholder.com/600x800?text=Brinco+Dourado"
+  },
+  {
+    "id": "12",
+    "name": "Chapéu Bucket Bege",
+    "price": 54.9,
+    "currency": "BRL",
+    "category": "Acessórios",
+    "sizes": ["U"],
+    "condition": "Muito bom",
+    "description": "Chapéu bucket em tecido leve, tendência retrô.",
+    "image": "https://via.placeholder.com/600x800?text=Chapeu+Bucket"
+  }
+]

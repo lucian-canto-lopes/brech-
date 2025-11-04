@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brechó - Roupas e Acessórios</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <h1 class="logo">Brechó</h1>
+      <nav class="nav">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Garimpe achadinhos com estilo</h2>
+        <p>Peças selecionadas, preços acessíveis e consumo consciente.</p>
+        <a href="#catalogo" class="btn">Ver catálogo</a>
+      </div>
+    </section>
+
+    <section id="catalogo" class="catalog">
+      <div class="catalog-controls">
+        <input id="searchInput" type="search" placeholder="Buscar por nome ou descrição..." />
+        <select id="categorySelect">
+          <option value="">Todas as categorias</option>
+          <option value="Roupas">Roupas</option>
+          <option value="Calçados">Calçados</option>
+          <option value="Acessórios">Acessórios</option>
+        </select>
+      </div>
+      <div id="productGrid" class="grid"></div>
+      <div id="emptyState" class="empty" hidden>Nenhum produto encontrado.</div>
+    </section>
+
+    <section id="sobre" class="about">
+      <h3>Sobre o Brechó</h3>
+      <p>
+        Promovemos moda circular e sustentável. Cada peça passa por curadoria para garantir qualidade
+        e estilo. Compre com consciência e ajude a reduzir o impacto ambiental.
+      </p>
+    </section>
+
+    <section id="contato" class="contact">
+      <h3>Contato</h3>
+      <ul>
+        <li>Instagram: <a href="#" rel="noopener">@seu_brecho</a></li>
+        <li>WhatsApp: <a href="#" rel="noopener">(xx) xxxxx-xxxx</a></li>
+        <li>E-mail: <a href="mailto:contato@brecho.com">contato@brecho.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
