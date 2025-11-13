@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3000;
 const ROOT = path.resolve(__dirname, '..');
 const FRONTEND_DIR = path.join(ROOT, 'frontend');
 const DATA_FILE = path.join(__dirname, 'data', 'products.json');
+const USERS_FILE = path.join(__dirname, 'data', 'users.json');
 
 function readJSON(filePath) {
   try {
@@ -101,6 +102,7 @@ const server = http.createServer((req, res) => {
   if (pathname.startsWith('/api/')) {
     // API routes
     const products = readJSON(DATA_FILE) || [];
+    const users = readJSON(USERS_FILE) || [];
 
     if (pathname === '/api/products' && req.method === 'GET') {
       const filtered = filterProducts(products, query);
@@ -118,6 +120,25 @@ const server = http.createServer((req, res) => {
 
     if (pathname === '/api/health' && req.method === 'GET') {
       return sendJSON(res, 200, { status: 'ok' });
+    }
+
+    if (pathname === '/api/login' && req.method === 'POST') {
+      let body = '';
+      req.on('data', chunk => { body += chunk; if (body.length > 10_000) req.destroy(); });
+      req.on('end', () => {
+        try {
+          const data = JSON.parse(body || '{}');
+          const { email = '', password = '' } = data;
+          const user = users.find(u => u.email === email && u.password === password);
+          if (!user) return sendJSON(res, 401, { message: 'Credenciais inválidas' });
+          // Token simples (não seguro) só para demo
+          const token = Buffer.from(`${user.id}:${Date.now()}`).toString('base64');
+          return sendJSON(res, 200, { token, name: user.name, email: user.email });
+        } catch (e) {
+          return sendJSON(res, 400, { message: 'JSON inválido' });
+        }
+      });
+      return;
     }
 
     return sendJSON(res, 404, { message: 'Rota da API não encontrada' });

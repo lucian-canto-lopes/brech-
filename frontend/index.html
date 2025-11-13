@@ -14,6 +14,8 @@
         <a href="#catalogo">Catálogo</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
+        <span id="authArea" class="muted" style="margin-left:16px"></span>
+        <a id="loginLink" href="/login.html" class="btn" style="margin-left:10px">Login</a>
       </nav>
     </div>
   </header>
@@ -60,5 +62,21 @@
   </main>
 
   <script src="/app.js" type="module"></script>
+  <script type="module">
+    const authArea = document.getElementById('authArea');
+    const loginLink = document.getElementById('loginLink');
+    const token = localStorage.getItem('authToken');
+    const name = localStorage.getItem('userName');
+    if (token && name){
+      authArea.textContent = `Olá, ${name}`;
+      loginLink.textContent = 'Sair';
+      loginLink.addEventListener('click', (e)=>{
+        e.preventDefault();
+        localStorage.removeItem('authToken');
+        localStorage.removeItem('userName');
+        window.location.href = '/login.html';
+      });
+    }
+  </script>
 </body>
 </html>

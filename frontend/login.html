@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Brechó</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .auth-wrapper{min-height:100dvh;display:grid;place-items:center;padding:32px}
+    .card-auth{width:min(420px,100%);background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:18px}
+    .card-auth h1{margin:0;font-size:22px}
+    .form-group{display:flex;flex-direction:column;gap:6px}
+    .form-group label{font-size:14px;color:var(--muted)}
+    .form-group input{background:#0f141a;border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px}
+    .error-msg{background:#7f1d1d;color:#fff;padding:8px 12px;border-radius:8px;font-size:14px;display:none}
+    .success-msg{background:#065f46;color:#fff;padding:8px 12px;border-radius:8px;font-size:14px;display:none}
+    .links{display:flex;justify-content:space-between;font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="auth-wrapper">
+    <form id="loginForm" class="card-auth" novalidate>
+      <div class="auth-icon" style="display:grid;place-items:center;margin-bottom:4px">
+        <!-- Ícone do usuário em SVG, usa a cor primária (laranja) -->
+        <svg class="logo-icon" viewBox="0 0 512 512" width="80" height="80" role="img" aria-label="Usuário">
+          <title>Usuário</title>
+          <g fill="none" stroke="currentColor" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" color="var(--brand)">
+            <!-- Círculo externo -->
+            <circle cx="256" cy="256" r="216"/>
+            <!-- Cabeça -->
+            <circle cx="256" cy="200" r="80"/>
+            <!-- Ombros/base -->
+            <path d="M120 392c32-56 88-88 136-88s104 32 136 88"/>
+          </g>
+        </svg>
+      </div>
+      <h1 style="text-align:center;margin-top:0">Entrar</h1>
+      <p class="muted">Use o usuário demo para testar: <code>admin@brecho.com / senha123</code></p>
+      <div class="error-msg" id="loginError"></div>
+      <div class="success-msg" id="loginSuccess"></div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" autocomplete="username" required placeholder="seuemail@exemplo.com" />
+      </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required placeholder="••••••" />
+      </div>
+      <button class="btn" type="submit" style="width:100%">Entrar</button>
+      <div class="links">
+        <a href="/index.html">Voltar ao site</a>
+        <span class="muted">Brechó © 2025</span>
+      </div>
+    </form>
+  </div>
+  <script type="module" src="/login.js"></script>
+</body>
+</html>

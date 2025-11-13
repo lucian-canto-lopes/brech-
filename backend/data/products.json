@@ -1,14 +1,14 @@
 [
   {
     "id": "1",
-    "name": "Jaqueta Jeans Vintage",
-    "price": 119.9,
+    "name": "Tênis Nike Air Force 1",
+    "price": 149.9,
     "currency": "BRL",
-    "category": "Roupas",
-    "sizes": ["P", "M"],
+    "category": "Calçados",
+    "sizes": ["37", "38", "39", "40"],
     "condition": "Excelente",
-    "description": "Jaqueta jeans clássica, lavagem média, perfeita para meia-estação.",
-    "image": "https://via.placeholder.com/600x800?text=Jaqueta+Jeans"
+    "description": "Tênis Nike Air Force 1 rosé clássico, estado impecável. Modelo atemporal que combina com qualquer look.",
+    "image": "/public/image.png"
   },
   {
     "id": "2",
@@ -19,7 +19,7 @@
     "sizes": ["M"],
     "condition": "Ótimo",
     "description": "Vestido midi com estampa floral e tecido leve.",
-    "image": "https://via.placeholder.com/600x800?text=Vestido+Floral"
+    "image": "/public/650966.webp"
   },
   {
     "id": "3",
@@ -30,7 +30,7 @@
     "sizes": ["G"],
     "condition": "Muito bom",
     "description": "Camisa de algodão, corte clássico, quase sem uso.",
-    "image": "https://via.placeholder.com/600x800?text=Camisa+Branca"
+    "image": "/public/camisa_slim_1401_1_a7351cbbe80847788ec29a00b99ffbc7.webp"
   },
   {
     "id": "4",
